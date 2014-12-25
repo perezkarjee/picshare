@@ -6,20 +6,25 @@
 1. clone the repo
 ```
 git clone https://github.com/perezkarjee/picshare.git
-cd picshare```
+cd picshare
+```
 
 2. uncomment the 'sqlite3' gem on gemfile & comment the 'pg' gem.
 3. delete database.yml on /config & rename '_sqlite_database.yml' to 'database.yml'.
 
 4. run bundler
 ```
-bundle install```
+bundle install
+```
+
 5. migrate the DB
 ```
-rake db:migrate```
+rake db:migrate
+```
 6. start the server
 ```
 rails s```
+
 7. view the app in http://localhost:3000
 
 ######How To Deploy On Heroku
@@ -30,11 +35,13 @@ a AWS account & a amazon s3 bucket already setup as well)
 ```
 git clone https://github.com/perezkarjee/picshare.git```
 ```
-cd picshare```
+cd picshare
+```
 
 2. create heroku app
 ```
-heroku create myappname```
+heroku create myappname
+```
 
 3. Add config vars to use Amazon S3 for storage
 ```
