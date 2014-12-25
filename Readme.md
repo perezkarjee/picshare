@@ -34,7 +34,7 @@ a AWS account & a amazon s3 bucket already setup as well)
 
 1. clone the repo
 ```
-git clone https://github.com/perezkarjee/picshare.git```
+git clone https://github.com/perezkarjee/picshare.git
 ```
 cd picshare
 ```
