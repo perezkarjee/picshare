@@ -32,35 +32,34 @@ rails s
 (assuming, that you already have an heroku account & heroku toolbelt installed on your PC and
 a AWS account & a amazon s3 bucket already setup as well)
 
-1. clone the repo
+1.clone the repo
 ```
 git clone https://github.com/perezkarjee/picshare.git
-```
 cd picshare
 ```
-2. create heroku app
+2.create heroku app
 ```
 heroku create myappname
 ```
-3. Add config vars to use Amazon S3 for storage
+3.Add config vars to use Amazon S3 for storage
 ```
 heroku config:set AWS_ACCESS_KEY_ID=my_aws_access_key
 heroku config:set AWS_SECRET_ACCESS_KEY=my_aws_secret_access_key
 heroku config:set S3_BUCKET_NAME=my_s3_bucketname
 ```
-4. add heroku postgres
+4.add heroku postgres
 ```
 heroku addons:add heroku-postgresql
 ```
-5. push it to heroku
+5.push it to heroku
 ```
 git push heroku master
 ```
-6. migrate the DB
+6.migrate the DB
 ```
 heroku run rake db:migrate
 ```
-7. view the application in the browser
+7.view the application in the browser
 ```
 heroku open
 ```
