@@ -1,7 +1,7 @@
 #README
 
 ###How To Deploy
-
+-----------------
 ######Deploy As Development Mode
 1.clone the repo
 ```
@@ -9,7 +9,9 @@ git clone https://github.com/perezkarjee/picshare.git
 cd picshare
 ```
 2.uncomment the 'sqlite3' gem on gemfile & comment the 'pg' gem.
+
 3.delete database.yml on /config & rename '_sqlite_database.yml' to 'database.yml'.
+
 4.run bundler
 ```
 bundle install
@@ -23,6 +25,8 @@ rake db:migrate
 rails s
 ```
 7.view the app in http://localhost:3000
+
+----------------
 
 ######How To Deploy On Heroku
 (assuming, that you already have an heroku account & heroku toolbelt installed on your PC and
