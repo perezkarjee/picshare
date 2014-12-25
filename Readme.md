@@ -3,6 +3,7 @@
 ###How To Deploy
 
 ######Deploy As Development Mode
+
 1. clone the repo
 ```sh
 git clone https://github.com/perezkarjee/picshare.git```
@@ -23,12 +24,13 @@ rails s```
 7. view the app in http://localhost:3000
 
 ######How To Deploy On Heroku
+
 (assuming, that you already have an heroku account & heroku toolbelt installed on your PC and
 a AWS account & a amazon s3 bucket already setup as well)
+
 1. clone the repo
 ```sh
-git clone https://github.com/perezkarjee/picshare.git```
-```sh
+git clone https://github.com/perezkarjee/picshare.git
 cd picshare```
 
 2. create heroku app
