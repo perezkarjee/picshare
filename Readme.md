@@ -1,5 +1,7 @@
 #README
 
+###View The Demo App Here https://picsharedemo.herokuapp.com
+
 ###How To Deploy
 -----------------
 ######Deploy As Development Mode
@@ -25,6 +27,9 @@ rake db:migrate
 rails s
 ```
 7.view the app in http://localhost:3000
+
+please note: imagemagick should be installed for image processing to work
+after installing it, please provide it's path on /environments/development.rb
 
 ----------------
 

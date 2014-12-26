@@ -17,11 +17,13 @@
 
   <div class="form-group">
     <div class="col-xs-12">
-    <%= f.label :image %><br>
     <%= f.file_field :image %>
+    <br>
+    <p>Choose a file to upload, supported formats: jpg, jpeg, png, gif, bmp</p>
+    <em>5 MegaBytes max</em>
   </div>
   </div>
-
+  <br>
   <div class="form-group">
     <div class="col-xs-12">
     <%= f.label :title %><br>
