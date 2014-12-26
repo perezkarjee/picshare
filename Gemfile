@@ -33,6 +33,9 @@ gem 'will_paginate'
 
 #paperclip for file attachments
 gem "paperclip", "~> 3.0"
+
+#aws sdk for s3
+gem 'aws-sdk', '~> 1.5.7'
 #
 ################################
 
