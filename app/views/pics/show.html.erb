@@ -1,0 +1,43 @@
+<br>
+
+
+<div class="col-xs-12">
+
+<div class="well">
+	<%= image_tag @pic.image.url(:original), class: "img-responsive img-thumbnail" %>
+</div>
+
+<div class="well">
+	<h4>Pic Links</h4>
+Original: <input class="form-control default-cursor" type="text" value="<%= @pic.image.url(:original) %>" size="50%" readonly>
+Medium: <input class="form-control default-cursor" type="text" value="<%= @pic.image.url(:medium) %>" size="50%" readonly>
+Thumbnail: <input class="form-control default-cursor" type="text" value="<%= @pic.image.url(:thumb) %>" size="50%" readonly>
+</div>
+
+
+<div class="well">
+	<h4>Pic Details</h4>
+<p><strong>Title:</strong>
+<%= @pic.title %>
+</p>
+
+<p><strong>Description:</strong>
+ <%= @pic.description %>
+</p>
+
+<p><strong>Added At:</strong>
+ <%= @pic.created_at %>
+</p>
+
+<p><strong>By:</strong>
+ <%= @pic.user.name %>
+</p>
+</div>
+
+<div class="well">
+<%= link_to 'Back', pics_path, class: "btn btn-success" %> <% if current_user == @pic.user %> |
+<%= link_to 'Destroy', @pic, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+<% end %>
+</div>
+
+</div>

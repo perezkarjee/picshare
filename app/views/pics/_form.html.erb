@@ -1,0 +1,51 @@
+
+<%= form_for(@pic) do |f| %>
+  <% if @pic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pic.errors.count, "error") %> prohibited this pic from being saved:</h2>
+
+      <ul>
+      <% @pic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="col-xs-12">
+<form class="form-horizontal">
+
+  <div class="form-group">
+    <div class="col-xs-12">
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
+  </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-xs-12">
+    <%= f.label :title %><br>
+    <%= f.text_field :title, class: "form-control", placeholder:"Title(Max 120 Characters)" %>
+  </div>
+  </div>
+
+
+ <div class="form-group">
+    <div class="col-xs-12">
+    <%= f.label :description %><br>
+    <%= f.text_area :description, class: "form-control", placeholder:"Description(Max 255 Characters)" %>
+   </div>
+  </div>
+
+
+  <div class="form-group">
+    <div class="col-xs-12">
+      <br>
+    <%= f.submit class: "btn btn-primary", value: "Add New Pic" %>
+  </div>
+  </div>
+
+<% end %>
+
+</form>
+</div>

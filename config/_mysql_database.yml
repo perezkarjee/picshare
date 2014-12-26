@@ -1,0 +1,18 @@
+default: &default
+  adapter: mysql2
+  host: mysqlserver.example.com
+  username: mysqlusername
+  password: mysqlpassword
+
+
+development:
+  <<: *default
+  database: db_development
+  
+test:
+  <<: *default
+  database: db_test
+
+production:
+  <<: *default
+  database: db_production

@@ -1,0 +1,22 @@
+.picbox{
+  margin: 5px;
+  line-height: 1.4em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #444;
+  width: 300px;
+}
+
+.picbox img {
+  display: block;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+}
+
+input[readonly].default-cursor {
+    cursor: default;
+}

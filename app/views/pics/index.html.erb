@@ -1,0 +1,29 @@
+<% unless user_signed_in? %>
+<%= render 'layouts/welcome' %>
+<% end %>
+
+<br>
+<br>
+
+<div class="container-fluid col-xs-10 col-xs-offset-1" id="picsmasonry">
+
+    <% @pics.each do |pic| %>
+        <div class="picbox">
+        <%= link_to (image_tag pic.image.url(:medium)), pic %>
+        </div>
+    <% end %>
+</div>
+
+<br>
+<br>
+
+<!--uncomment it if you want to show pagination only to a logged in user on the homepage-->
+<!--% if user_signed_in? %-->
+<div class="container col-xs-10 col-xs-offset-1">
+
+<div class="well col-xs-6 col-xs-offset-3">
+ <%= will_paginate @pics, class: "pull-right" %>
+ <%= page_entries_info @pics %>
+</div>
+</div>
+<!--% end %-->
