@@ -1,8 +1,5 @@
-var container = document.querySelector('#picsmasonry');
-var msnry;
-// initialize Masonry after all images have loaded
-imagesLoaded( container, function() {
-  msnry = new Masonry( container );
+$(window).load(function() {
+  $('#picsmasonry').masonry({ columnWidth: 320 });
 });
 
 $(document).ready(function() {
