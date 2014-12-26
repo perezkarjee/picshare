@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 ###############################
 #bootstrap for styles
-gem 'bootstrap-sass', '~> 3.0'
+gem 'bootstrap-sass', '3.0'
 
 #devise for auth
 gem 'devise'
